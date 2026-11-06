@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+
+:root {
+
+    /* =========================
+       PALETA DE COLORES
+    ========================= */
+
+    --color-fondo: #0A0A0A;
+    --color-rojo: #FF3B30;
+    --color-texto: #F5F5F5;
+    --color-naranja: #FF7A00;
+    --color-tarjetas: #252525;
+
+    --color-gris: #A3A3A3;
+    --color-bordes: #3A3A3A;
+    --color-blanco: #FFFFFF;
+
+
+    /* =========================
+       TIPOGRAFÍAS
+    ========================= */
+
+    /* 1. Anton - Títulos principales */
+    --font-titulos: 'Anton', sans-serif;
+
+    /* 2. Oswald - Subtítulos y botones */
+    --font-subtitulos: 'Oswald', sans-serif;
+
+    /* 3. Inter - Textos y navegación */
+    --font-textos: 'Inter', sans-serif;
+
+    /* 4. IBM Plex Mono - Etiquetas técnicas */
+    --font-tecnica: 'IBM Plex Mono', monospace;
+
+
+    /* =========================
+       TAMAÑOS DE FUENTE
+    ========================= */
+
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-md: 1.125rem;
+    --font-lg: 1.25rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 2rem;
+    --font-3xl: 3rem;
+    --font-4xl: 4rem;
+    --font-5xl: 5rem;
+
+
+    /* =========================
+       ESPACIADOS
+    ========================= */
+
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+
+
+    /* =========================
+       MEDIDAS GENERALES
+    ========================= */
+
+    --width-container: 80rem;
+    --width-content: 70rem;
+
+    --height-header: 5rem;
+    --height-button: 2.75rem;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+
+    --border-size: 0.0625rem;
+
+
+    /* =========================
+       TRANSICIONES
+    ========================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+}
+
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--font-textos);
+}
+
+
+/* =========================
+   TÍTULOS PRINCIPALES
+   ANTON
+========================= */
+
+h1 {
+    font-family: var(--font-titulos);
+    font-size: var(--font-5xl);
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   SUBTÍTULOS Y BOTONES
+   OSWALD
+========================= */
+
+h2, h3 {
+    font-family: var(--font-subtitulos);
+    text-transform: uppercase;
+}
+
+button {
+    font-family: var(--font-subtitulos);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* =========================
+   TEXTOS Y NAVEGACIÓN
+   INTER
+========================= */
+
+p, a, nav, li, input, textarea {
+    font-family: var(--font-textos);
+}
+
+p {
+    font-size: var(--font-base);
+    line-height: 1.7;
+    color: var(--color-gris);
+}
+
+
+/* =========================
+   ETIQUETAS TÉCNICAS
+   IBM PLEX MONO
+========================= */
+
+.etiqueta,
+.texto-tecnico,
+.codigo,
+.badge-tecnico {
+    font-family: var(--font-tecnica);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-primary {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    border: none;
+    padding: var(--space-md) var(--space-xl);
+    font-family: var(--font-subtitulos);
+    transition: var(--transition-normal);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-naranja);
+}
