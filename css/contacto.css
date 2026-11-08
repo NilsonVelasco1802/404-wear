@@ -124,7 +124,7 @@
 .checkbox-brutalist{
     background-color: var(--color-tarjetas);
     border: 1px solid var(--color-bordes);
-    border-radius: 0; /* Cuadrado perfecto */
+    border-radius: 0;
     width: 1.2rem;
     height: 1.2rem;
     margin-top: 0.15rem;
@@ -183,7 +183,7 @@
 }
 
 .linksnaranjas:hover {
-    color: var(--color-blanco); /* Se pone blanco al pasar el ratón */
+    color: var(--color-blanco);
 }
 
 /*IMAGEN de los pelaos*/
@@ -195,7 +195,7 @@
     position: absolute;
     bottom: var(--space-xl);
     left: var(--space-xl);
-    background-color: var(--color-fondo);/* Fondo negro semitransparente */
+    background-color: var(--color-fondo);
     color: var(--color-blanco);
     padding: var(--space-sm) var(--space-md);
     font-family: var(--font-tecnica);
@@ -207,7 +207,7 @@
 /* seccion de links de las redes*/
 
 .bg-tarjetas {
-    background-color: var(--color-tarjetas); /* Usa el gris oscuro de tu paleta */
+    background-color: var(--color-tarjetas);
 }
 
 .titulo-redes {
