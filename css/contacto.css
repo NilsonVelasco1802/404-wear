@@ -1,0 +1,281 @@
+
+.inicio-contacto{
+    padding: var(--space-3xl) 0;
+    background-color: var(--color-fondo);
+}
+
+.hablemosclaro{
+    font-family: var(--font-titulos);
+    font-size: clamp(3rem, 6vw, 5.5rem); 
+    line-height: 0.9;
+    color: var(--color-texto);
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.descripcion1{
+    font-family: var(--font-textos);
+    font-size: var(--font-md);
+    color: var(--color-gris);
+    max-width: 95%; 
+    line-height: 1.6;
+}
+
+
+.imagen-caja-roja {
+    width: 100%; 
+    max-width: 290px; 
+    height: auto; 
+    object-fit: contain; 
+    display: block; 
+}
+
+
+
+/* seccion de contacto*/
+
+.seccion-contacto {
+    background-color: var(--color-fondo);
+    border-top: 1px solid var(--color-bordes);
+}
+
+/* Textos Específicos */
+.texto-naranja { color: var(--color-naranja); font-weight: 500; }
+.texto-gris { color: var(--color-gris); }
+.texto-blanco { color: var(--color-blanco); }
+
+/* Títulos de la izquierda*/
+.titulo-seccion {
+    font-family: var(--font-titulos);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+    color: var(--color-texto);
+}
+
+.subtitulo-contacto {
+    font-family: var(--font-subtitulos);
+    font-size: var(--font-xl);
+    color: var(--color-blanco);
+}
+
+/* Título del formulario*/
+.titulo-formulario {
+    font-family: var(--font-titulos);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--color-texto);
+    line-height: 1;
+    margin: 0;
+}
+
+/*botones del contacto*/
+
+.btn-brutalist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md);
+    background-color: transparent;
+    border: 1px solid var(--color-bordes);
+    color: var(--color-texto);
+    text-decoration: none;
+    font-family: var(--font-subtitulos);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: var(--transition-normal);
+}
+
+.btn-brutalist:hover {
+    border-color: var(--color-rojo);
+    color: var(--color-rojo);
+}
+
+/* imputs del formulario*/
+
+.input-brutalist {
+    background-color: var(--color-tarjetas); 
+    border: 1px solid transparent;
+    border-radius: 0; 
+    color: var(--color-texto);
+    padding: 1rem;
+    font-family: var(--font-textos);
+    font-size: 0.9rem;
+    transition: var(--transition-normal);
+}
+
+/* Cuando el usuario hace clic en el input */
+.input-brutalist:focus {
+    background-color: var(--color-tarjetas);
+    color: var(--color-blanco);
+    border-color: var(--color-rojo); 
+    box-shadow: none;
+    outline: none;
+}
+
+/* Color del texto de relleno (placeholder) */
+.input-brutalist::placeholder {
+    color: var(--color-gris);
+    opacity: 0.7;
+}
+
+/*CHECKBOX PERSONALIZADO*/
+
+.checkbox-brutalist{
+    background-color: var(--color-tarjetas);
+    border: 1px solid var(--color-bordes);
+    border-radius: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.15rem;
+}
+
+.checkbox-brutalist:checked{
+    background-color: var(--color-rojo);
+    border-color: var(--color-rojo);
+}
+
+.checkbox :focus {
+    box-shadow: none;
+    border-color: var(--color-rojo);
+}
+
+/* el boton de enviar (Rojo)*/
+.btn-enviar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    border: none;
+    padding: 1rem 2rem;
+    font-family: var(--font-subtitulos);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    width: 100%; 
+    max-width: 250px; 
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+}
+
+/*SECCIÓN INFORMACIÓN TIENDA*/
+
+.seccion-tienda {
+    background-color: var(--color-fondo);
+    border-top: 1px solid var(--color-bordes); 
+}
+
+/* Enlaces Naranjas (Ubicación/Envíos) */
+.linksnaranjas{
+    color: var(--color-naranja);
+    text-decoration: none;
+    font-family: var(--font-tecnica);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    transition: var(--transition-fast);
+}
+
+.linksnaranjas:hover {
+    color: var(--color-blanco);
+}
+
+/*IMAGEN de los pelaos*/
+.imagen-tienda {
+    min-height: 290px; 
+}
+
+.etiqueta-imagen {
+    position: absolute;
+    bottom: var(--space-xl);
+    left: var(--space-xl);
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    padding: var(--space-sm) var(--space-md);
+    font-family: var(--font-tecnica);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* seccion de links de las redes*/
+
+.bg-tarjetas {
+    background-color: var(--color-tarjetas);
+}
+
+.titulo-redes {
+    font-family: var(--font-titulos);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--color-texto);
+    line-height: 1;
+    margin: 0;
+}
+
+/* Enlaces de Redes */
+.enlace-links {
+    text-decoration: none;
+    padding: var(--space-lg) 0;
+    border-bottom: 1px solid var(--color-bordes);
+    transition: var(--transition-normal);
+}
+
+
+.enlace-links:last-child {
+    border-bottom: none;
+}
+
+.enlace-links :hover{
+    color: var(--color-rojo);
+}
+.nombre-red {
+    font-family: var(--font-textos);
+    font-size: var(--font-lg);
+    color: var(--color-blanco);
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+/* footer de la pagina*/
+
+.texto-gigante-footer {
+    font-family: var(--font-titulos);
+    color: var(--color-texto);
+    font-size: clamp(4rem, 15vw, 18rem); 
+    line-height: 0.8; 
+    letter-spacing: -2px;
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+
+
+/*menu del footer ( es lo mismo que el del header pero con clases pq si uso el del header se bugea)*/
+
+.menu-footer li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-texto);
+    transition: var(--transition-normal);
+    font-family: var(--font-textos);
+}
+
+.menu-footer li a:hover {
+    color: var(--color-rojo);
+    transform: scale(1.1);
+}
+
+
+.fs-xs { font-size: var(--font-xs); }       
+.fs-sm { font-size: var(--font-sm); }       
+.fs-base { font-size: var(--font-base); }   
+.fs-xxs { font-size: 0.65rem; } 
+.ls-1 { letter-spacing: 1px; }
+.border-custom-bottom { border-bottom: 1px solid var(--color-bordes); }
+.border-custom-top { border-top: 1px solid var(--color-bordes); }
+
