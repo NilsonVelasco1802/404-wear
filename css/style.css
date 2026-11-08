@@ -49,6 +49,8 @@
     --font-3xl: 3rem;
     --font-4xl: 4rem;
     --font-5xl: 5rem;
+    --font-6xl: 6rem;
+    --font-7xl: 7rem;
 
 
     /* =========================
@@ -191,6 +193,15 @@ p {
 
 /*    HEADER    */
 
+#header{
+   width: 100%;
+   height: auto;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   
+}
+
 /*   HEADER TEXTO SUPERIOR   */
 
 #frases-header {
@@ -221,7 +232,7 @@ p {
    margin: 0;
 }
 
-/*   HEADER TEXTO SUPERIOR   */
+
 
 
 
@@ -239,7 +250,7 @@ p {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: var(--space-md) var(--space-lg);
+   padding: var(--space-xs) var(--space-lg);
    border-bottom: solid 1px var(--color-bordes);
 }
 
@@ -296,4 +307,70 @@ p {
    text-decoration: none;
    color: var(--color-texto);
    transition: var(--transition-normal);
+}
+
+/*  Activado */
+
+#nav-header ul li a.activado {
+    color: var(--color-rojo);
+    border-bottom: solid 2px var(--color-rojo);
+}
+
+
+/*  FOOTER  */
+
+#footer {
+   
+   padding: var(--space-2xl) var(--space-2xl) var(--space-lg);
+}
+
+/*  FOOTER TOP  */
+
+#top-footer{
+   display: flex;
+   justify-content:space-between;
+   
+}
+
+
+   /*  MENU FOOTER  */
+
+   #menu-footer{
+   display: flex;
+
+   & li{
+      list-style: none;
+      margin: var(--space-sm);
+      font-size: var(--font-sm);
+   }
+   }
+
+   .titulos-li{
+   color: var(--color-gris);
+   margin-bottom: var(--space-xs);
+   }
+
+
+/*  LOGO FOOTER  */
+
+#logo-footer{
+   display: flex;
+ 
+
+   & h2{
+   font-size: clamp(3rem, 13vw, 13rem);
+        white-space: nowrap;
+        margin: 0;
+        max-width: 100%;
+   }
+}
+
+#copyright-footer{
+   display: flex;
+   justify-content: space-between;
+   border-top: solid var(--color-bordes) 1px;
+
+   & #p-color-narnja{
+      color: var(--color-naranja);
+   }
 }
