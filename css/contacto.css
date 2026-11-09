@@ -3,14 +3,12 @@
     background-color: var(--color-fondo);
 }
 
-.hablemosclaro {
-    font-family: var(--font-titulos);
-    font-size: clamp(3rem, 6vw, 5.5rem); 
-    line-height: 0.9;
-    color: var(--color-texto);
-    margin: 0;
-    letter-spacing: -1px;
+#hablemos{
+    border:solid var(--color-rojo) 1px;
+    & a{ color:var(--color-rojo)
+    }
 }
+
 
 .descripcion1 {
     font-family: var(--font-textos);
@@ -232,7 +230,6 @@
     font-weight: 500;
     transition: var(--transition-fast);
 }
-
 
 
 .fs-xs { font-size: var(--font-xs); }       
