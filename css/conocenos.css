@@ -1,0 +1,572 @@
+/* =========================
+   BREADCRUMB
+========================= */
+
+/* espacio alrededor para que no quede pegado al borde (padding = espacio por dentro) */
+.breadcrumb {
+    padding: var(--space-lg) var(--space-xl);
+}
+
+/* flex los pone en fila. quito números y el espacio que trae la lista por defecto */
+.breadcrumb ol {
+    display: flex;
+    gap: var(--space-sm);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* letra tipo máquina, pequeña, en mayúscula y gris */
+.breadcrumb li {
+    font-family: var(--font-tecnica);
+    font-size: var(--font-xs);
+    text-transform: uppercase;
+    color: var(--color-gris);
+}
+
+/* li + li = el li que tiene otro antes, así la barra no sale al inicio */
+/* ::before va PEGADO, sin espacio */
+.breadcrumb li+li::before {
+    content: "/";
+    margin-right: var(--space-sm);
+}
+
+/* la página donde estoy se ve más clarita */
+.breadcrumb li[aria-current] {
+    color: var(--color-texto);
+}
+
+/* los links no heredan solos porque tienen su propia regla, por eso pongo inherit */
+.breadcrumb a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    /* quita el subrayado */
+    transition: var(--transition-fast);
+    /* para que el cambio sea suave */
+}
+
+/* cuando paso el mouse encima */
+.breadcrumb a:hover {
+    color: var(--color-texto);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+/* el padre organiza: dos columnas iguales (1fr = una parte) */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* --- columna de texto --- */
+
+/* column = uno debajo del otro. gap = mismo espacio entre todos */
+/* a los lados uso space-xl igual que el breadcrumb para que queden alineados */
+.hero-texto {
+    padding: var(--space-3xl) var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+/* h1 y p traen margen del navegador, lo quito para que solo mande el gap */
+.hero-texto h1,
+.hero-texto p {
+    margin: 0;
+}
+
+/* solo le pongo lo que falta, lo demás ya viene de la clase etiqueta */
+.hero-etiqueta {
+    color: var(--color-naranja);
+    font-size: var(--font-xs);
+}
+
+/* line-height menor a 1 = líneas más juntas, así se ve como en figma */
+.hero-texto h1 {
+    font-size: var(--font-5xl);
+    line-height: 0.95;
+}
+
+.hero-subtitulo {
+    color: var(--color-rojo);
+    font-family: var(--font-subtitulos);
+    font-size: var(--font-lg);
+    text-transform: uppercase;
+    font-weight: 600;
+    /* negrita */
+}
+
+/* max-width = no más ancho que esto. líneas cortas se leen mejor */
+.hero-descripcion {
+    max-width: 28rem;
+}
+
+/* space-between = uno a cada lado. margin-top auto = lo empuja hasta abajo */
+.hero-pie {
+    display: flex;
+    justify-content: space-between;
+    border-top: var(--border-size) solid var(--color-bordes);
+    /* grosor, tipo, color */
+    padding-top: var(--space-md);
+    margin-top: auto;
+    font-size: var(--font-xs);
+}
+
+/* el p tiene su tamaño en style.css y le gana a la herencia, por eso inherit */
+.hero-pie p {
+    font-size: inherit;
+}
+
+/* el subrayado se quita en el link, no en el contenedor */
+.hero-pie a {
+    color: var(--color-naranja);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.hero-pie a:hover {
+    color: var(--color-rojo);
+}
+
+
+/* --- columna de imagen --- */
+
+/* figure trae margen, lo quito */
+/* relative = esta es la "hoja" donde se pega el sticker */
+.hero-imagen {
+    margin: 0;
+    position: relative;
+}
+
+/* la foto ocupa toda su columna. cover = recorta en vez de estirar */
+/* block quita el espacio fantasma de abajo */
+.hero-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* absolute = el "sticker" que flota encima de la foto */
+/* con left y right se estira de lado a lado */
+.hero-imagen figcaption {
+    position: absolute;
+    bottom: var(--space-md);
+    left: var(--space-md);
+    right: var(--space-md);
+
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--color-fondo);
+    /* fondo negro para que se lea */
+    font-size: var(--font-xs);
+    color: var(--color-gris);
+}
+
+/* last-child = el último hijo, o sea el "404° ↗" */
+.hero-imagen figcaption span:last-child {
+    color: var(--color-naranja);
+}
+
+
+/* =========================
+   FRANJA ROJA
+========================= */
+
+/* fondo rojo y aire arriba y abajo, nada a los lados */
+.franja {
+    background-color: var(--color-rojo);
+    padding: var(--space-md) 0;
+}
+
+/* frases en fila, juntas en el centro, sin puntos */
+/* center = todas al medio. space-between = una en cada punta */
+.franja ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* letra anton, mayúscula y oscura para que resalte sobre el rojo */
+.franja li {
+    font-family: var(--font-titulos);
+    font-size: var(--font-lg);
+    text-transform: uppercase;
+    color: var(--color-fondo);
+}
+
+/* mismo truco del breadcrumb: barra antes de cada frase menos la primera */
+.franja li+li::before {
+    content: "/";
+    margin-right: var(--space-lg);
+}
+
+
+/* =========================
+   ORIGEN
+========================= */
+
+/* dos columnas como el hero, con espacio entre ellas */
+/* mismo padding a los lados para que todo quede alineado */
+.origen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    padding: var(--space-3xl) var(--space-xl);
+}
+
+/* quito márgenes del navegador para que solo mande el gap */
+.origen h2,
+.origen p {
+    margin: 0;
+}
+
+/* columna izquierda: etiqueta y título uno debajo del otro */
+.origen-titulo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.origen-etiqueta {
+    color: var(--color-naranja);
+    font-size: var(--font-xs);
+}
+
+/* en style.css los h2 son oswald, aquí lo cambio a anton */
+.origen h2 {
+    font-family: var(--font-titulos);
+    font-size: var(--font-3xl);
+    line-height: 1;
+}
+
+/* columna derecha: los dos párrafos uno debajo del otro */
+.origen-texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+/* el primer párrafo más claro porque es el importante */
+.origen-destacado {
+    color: var(--color-texto);
+    font-size: var(--font-md);
+}
+
+
+/* =========================
+   PROPÓSITO (TARJETAS)
+========================= */
+
+/* arriba 0 porque origen ya dejó espacio abajo. etiqueta arriba, tarjetas abajo */
+.proposito {
+    padding: 0 var(--space-xl) var(--space-3xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+/* quito márgenes del navegador */
+.proposito h3,
+.proposito p {
+    margin: 0;
+}
+
+/* las dos etiquetas se ven igual, entonces una sola regla con coma */
+.proposito-etiqueta,
+.tarjeta-etiqueta {
+    color: var(--color-naranja);
+    font-size: var(--font-xs);
+}
+
+/* las dos tarjetas lado a lado */
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+/* cada tarjeta: fondo gris y padding para que el texto no toque el borde */
+.tarjeta {
+    background-color: var(--color-tarjetas);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+/* título de la tarjeta en anton */
+.tarjeta h3 {
+    font-family: var(--font-titulos);
+    font-size: var(--font-2xl);
+    line-height: 1;
+}
+
+/* =========================
+   VALORES
+========================= */
+
+/* arriba 0 como en propósito. encabezado arriba y los 4 valores abajo */
+.valores {
+    padding: 0 var(--space-xl) var(--space-3xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+}
+
+/* quito márgenes del navegador, ahora son tres etiquetas */
+.valores h2,
+.valores h3,
+.valores p {
+    margin: 0;
+}
+
+/* encabezado en dos columnas */
+/* align-items end = el párrafo de la derecha baja hasta la base del título */
+.valores-encabezado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: end;
+}
+
+/* etiqueta arriba, título abajo */
+.valores-titulo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.valores-etiqueta {
+    color: var(--color-naranja);
+    font-size: var(--font-xs);
+}
+
+/* el h2 viene en oswald, lo paso a anton */
+.valores h2 {
+    font-family: var(--font-titulos);
+    font-size: var(--font-3xl);
+    line-height: 1;
+}
+
+/* repeat(4, 1fr) = 1fr 1fr 1fr 1fr, cuatro columnas iguales */
+.valores-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+/* cada valor con su línea arriba, igual que el pie del hero */
+.valor {
+    border-top: var(--border-size) solid var(--color-bordes);
+    padding-top: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+/* oswald y mayúscula ya vienen de style.css, solo cambio el tamaño */
+.valor h3 {
+    font-size: var(--font-md);
+}
+
+/* =========================
+   LENGUAJE (GALERÍA)
+========================= */
+
+/* fotos a la izquierda, texto a la derecha. align-items center = texto centrado en alto */
+.lenguaje {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    padding: 0 var(--space-xl) var(--space-3xl);
+    align-items: center;
+}
+
+/* las fotos en su propia cuadrícula de 2 columnas (grid dentro de grid) */
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+}
+
+/* todas las fotos llenan su espacio sin deformarse */
+.galeria img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    display: block;
+}
+
+/* la foto grande ocupa las 2 columnas y es más alta */
+/* span 2 = estírate 2 columnas */
+.galeria .galeria-principal {
+    grid-column: span 2;
+    height: 20rem;
+}
+
+/* columna de texto: todo uno debajo del otro */
+.lenguaje-texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.lenguaje h2,
+.lenguaje h3,
+.lenguaje p {
+    margin: 0;
+}
+
+.lenguaje-etiqueta {
+    color: var(--color-naranja);
+    font-size: var(--font-xs);
+}
+
+.lenguaje h2 {
+    font-family: var(--font-titulos);
+    font-size: var(--font-3xl);
+    line-height: 1;
+}
+
+.origen-texto,
+.lenguaje-texto {
+    max-width: 36rem;
+}
+
+/* lista sin puntos, ideas una debajo de otra */
+.lenguaje-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+/* cada idea con su línea arriba, igual que los valores */
+.lenguaje-lista li {
+    border-top: var(--border-size) solid var(--color-bordes);
+    padding-top: var(--space-md);
+}
+
+.lenguaje-lista h3 {
+    font-size: var(--font-md);
+    margin-bottom: var(--space-xs);
+}
+
+
+/* =========================
+   LLAMADO FINAL
+========================= */
+
+/* caja roja con margen a los lados (no toca los bordes de la pantalla) */
+/* flex con space-between = texto a la izquierda, botón a la derecha */
+.llamado {
+    background-color: var(--color-rojo);
+    margin: 0 var(--space-xl) var(--space-3xl);
+    padding: var(--space-2xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2xl);
+}
+
+.llamado h2,
+.llamado p {
+    margin: 0;
+}
+
+/* todo el texto oscuro sobre el rojo */
+.llamado h2,
+.llamado p,
+.llamado-etiqueta {
+    color: var(--color-fondo);
+}
+
+.llamado-texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.llamado-etiqueta {
+    font-size: var(--font-xs);
+}
+
+.llamado h2 {
+    font-family: var(--font-titulos);
+    font-size: var(--font-3xl);
+    line-height: 1;
+}
+
+.llamado-accion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+    max-width: 22rem;
+}
+
+/* btn-primary es rojo, pero aquí el fondo ya es rojo: lo cambio a negro */
+/* es un <a>, entonces le quito el subrayado y le pongo mayúsculas */
+.llamado .btn-primary {
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: var(--font-sm);
+}
+
+.llamado .btn-primary:hover {
+    background-color: var(--color-naranja);
+}
+
+
+/* =========================
+   CELULAR (RESPONSIVE)
+========================= */
+
+/* todo esto solo se aplica cuando la pantalla mide 768px o menos */
+@media (max-width: 768px) {
+
+    /* todas las secciones de dos columnas pasan a una sola */
+    .hero,
+    .origen,
+    .tarjetas,
+    .valores-encabezado,
+    .lenguaje {
+        grid-template-columns: 1fr;
+    }
+
+    /* los 4 valores pasan a 2 columnas */
+    .valores-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* título del hero más pequeño para que quepa */
+    .hero-texto h1 {
+        font-size: var(--font-4xl);
+    }
+
+    /* las frases de la franja bajan de línea si no caben */
+    .franja ul {
+        flex-wrap: wrap;
+    }
+
+    /* en el llamado, texto arriba y botón abajo */
+    .llamado {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

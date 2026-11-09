@@ -1,13 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conocenos</title>
+    <title>Conócenos · 404° WEAR</title>
+
+    <!-- primero el css general del equipo, luego el mío para poder cambiar cosas -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/conocenos.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <!-- aquí va la parte de Nilson -->
+    </header>
+
+    <main>
+
+        <!-- ================= BREADCRUMB ================= -->
+        <!-- el caminito de dónde estoy -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">La marca</a></li>
+                <li aria-current="page">Conócenos</li>
+            </ol>
+        </nav>
+
+
+        <!-- ================= HERO ================= -->
+        <!-- texto a la izquierda, foto a la derecha -->
+        <section class="hero">
+
+            <div class="hero-texto">
+                <p class="etiqueta hero-etiqueta">Conócenos / Esto es 404° WEAR</p>
+                <h1>Fuera del molde.</h1>
+                <p class="hero-subtitulo">No es un error. Es una postura.</p>
+                <p class="hero-descripcion">
+                    Ropa de calle para quienes no caben en una sola etiqueta.
+                    Siluetas libres, carácter crudo y una forma propia de estar
+                    en el mundo. El resto lo pones tú.
+                </p>
+
+                <div class="hero-pie">
+                    <p class="etiqueta">Uniforme para ser tú</p>
+                    <a class="etiqueta" href="#esencia">↓ Nuestra esencia</a>
+                </div>
+            </div>
+
+            <figure class="hero-imagen">
+                <img src="../img-conocenos/conocenos-hero.png"
+                    alt="Dos jóvenes con ropa oversize posando en un túnel urbano">
+                <figcaption class="etiqueta">
+                    <span>Fuera de sistema / Vol. 001</span>
+                    <span>404° ↗</span>
+                </figcaption>
+            </figure>
+
+        </section>
+
+
+        <!-- ================= FRANJA ROJA ================= -->
+        <!-- frases sueltas en fila. ul porque el orden no importa -->
+        <section class="franja">
+            <ul>
+                <li>No es un error</li>
+                <li>Es tu forma de vestir</li>
+                <li>404° WEAR</li>
+                <li>Fuera de sistema</li>
+            </ul>
+        </section>
+
+
+        <!-- ================= ORIGEN ================= -->
+        <!-- id="esencia" para que el link del hero baje hasta aquí -->
+        <section class="origen" id="esencia">
+
+            <!-- columna izquierda: etiqueta y título -->
+            <div class="origen-titulo">
+                <p class="etiqueta origen-etiqueta">01 / De dónde viene el código</p> <!-- revisar texto en Figma -->
+                <h2>Un error para el sistema. Un inicio para ti.</h2>
+            </div>
+
+            <!-- columna derecha: los dos párrafos -->
+            <div class="origen-texto">
+                <p class="origen-destacado">
+                    404 no es un destino que falla. Es el espacio para inventar uno nuevo.
+                    La idea de 404° WEAR nace de esa sensación de no encajar: cuando lo
+                    establecido no te representa, puedes construir tu propio lenguaje.
+                </p>
+                <p>
+                    El asfalto, la música y la libertad de mezclar códigos son nuestro punto
+                    de partida creativo. Esa mirada se traduce en prendas sin género, volúmenes
+                    amplios y una paleta cruda. No buscamos decirte quién ser; queremos dejar
+                    espacio para que lo decidas tú.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ================= TARJETAS (MISIÓN Y VISIÓN) ================= -->
+        <section class="proposito">
+
+            <p class="etiqueta proposito-etiqueta">02 / Lo que nos mueve</p>
+
+            <!-- contenedor de las dos tarjetas -->
+            <div class="tarjetas">
+
+                <!-- article = contenido que tiene sentido por sí solo -->
+                <article class="tarjeta">
+                    <p class="etiqueta tarjeta-etiqueta">Misión / El presente</p>
+                    <h3>Dar forma a tu actitud.</h3>
+                    <p>
+                        Acercar un vestuario urbano que permita expresarse sin encajar en un molde.
+                        Reunir esenciales de silueta libre y carácter propio para que cada persona
+                        los combine, los interprete y los haga parte de su día a día.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <p class="etiqueta tarjeta-etiqueta">Visión / El horizonte</p>
+                    <h3>Más identidad. Menos etiquetas.</h3>
+                    <p>
+                        Ser un punto de encuentro para quienes entienden la ropa como un lenguaje
+                        personal. Aspiramos a una cultura streetwear donde la diferencia tenga
+                        espacio y pertenecer no signifique parecerse a los demás.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= VALORES ================= -->
+        <section class="valores">
+
+            <!-- arriba: título a la izquierda, texto a la derecha -->
+            <div class="valores-encabezado">
+
+                <!-- NUEVO: le puse clase para poder darle estilo -->
+                <div class="valores-titulo">
+                    <p class="etiqueta valores-etiqueta">03 / Lo que defendemos</p> <!-- revisar texto en Figma -->
+                    <h2>Actitud, no personaje.</h2>
+                </div>
+
+                <p class="valores-intro">
+                    Cuatro ideas que guían cada prenda y cada decisión de 404° WEAR.
+                </p> <!-- revisar texto en Figma -->
+            </div>
+
+            <!-- abajo: los 4 valores en fila -->
+            <div class="valores-lista">
+
+                <div class="valor">
+                    <h3>Autenticidad</h3>
+                    <p>Vestir como eres, no como esperan que seas.</p> <!-- revisar texto en Figma -->
+                </div>
+
+                <div class="valor">
+                    <h3>Libertad</h3>
+                    <p>Siluetas y combinaciones sin reglas impuestas.</p> <!-- revisar texto en Figma -->
+                </div>
+
+                <div class="valor">
+                    <h3>Expresión</h3>
+                    <p>La ropa como una forma de decir quién eres.</p> <!-- revisar texto en Figma -->
+                </div>
+
+                <div class="valor">
+                    <h3>Conexión</h3>
+                    <p>Una comunidad que se reconoce en la diferencia.</p> <!-- revisar texto en Figma -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALERÍA + LENGUAJE ================= -->
+        <section class="lenguaje">
+
+            <!-- columna izquierda: las fotos -->
+            <div class="galeria">
+                <img class="galeria-principal" src="../img-conocenos/galeria-1.jpg"
+                    alt="Retrato en blanco y negro de una persona con sudadera oversize">
+                <img src="../img-conocenos/galeria-2.jpg" alt="Dos jóvenes caminando por la ciudad con ropa urbana">
+                <img src="../img-conocenos/galeria-3.jpg" alt="Detalle de una prenda negra en un entorno urbano">
+            </div>
+
+            <!-- columna derecha: título y lista de ideas -->
+            <div class="lenguaje-texto">
+                <p class="etiqueta lenguaje-etiqueta">04 / Así se ve</p> <!-- revisar texto en Figma -->
+                <h2>No otro uniforme. Tu propio lenguaje.</h2>
+                <p>
+                    Cada prenda está pensada para combinarse a tu manera.
+                    No hay una forma correcta de llevarla.
+                </p> <!-- revisar texto en Figma -->
+
+                <!-- ul porque son ideas sueltas -->
+                <ul class="lenguaje-lista">
+                    <li>
+                        <h3>Siluetas, no reglas.</h3>
+                        <p>Volúmenes amplios que se adaptan a ti, no al revés.</p> <!-- revisar texto en Figma -->
+                    </li>
+                    <li>
+                        <h3>Un código reconocible.</h3>
+                        <p>Detalles que identifican a la marca sin gritarlo.</p> <!-- revisar texto en Figma -->
+                    </li>
+                    <li>
+                        <h3>La prenda es solo el inicio.</h3>
+                        <p>Lo que la completa es tu actitud.</p> <!-- revisar texto en Figma -->
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+
+        <!-- ================= LLAMADO FINAL ================= -->
+        <!-- caja roja con frase y botón -->
+        <section class="llamado">
+
+            <div class="llamado-texto">
+                <p class="etiqueta llamado-etiqueta">05 / Tu turno</p>
+                <h2>La actitud no se explica. Se lleva.</h2>
+            </div>
+
+            <div class="llamado-accion">
+                <p>Explora la Colección 001 y encuentra tu propia forma de vestir.</p>
+                <!-- es un link porque lleva a otra página. btn-primary viene de style.css -->
+                <a class="btn-primary" href="catalogo.html">Explorar el catálogo →</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- aquí va la parte de Nilson -->
+    </footer>
+
 </body>
+
 </html>
