@@ -127,3 +127,28 @@
         max-height: none;
     }
 }
+
+/* =========================
+   FRASES BANNER
+========================= */
+
+#frases-banner {
+    background-color: var(--color-rojo);
+}
+
+#frases-banner ul {
+    gap: var(--space-sm);
+    padding: 0;
+    margin: var(--space-xs);
+    list-style: none;
+}
+
+#frases-banner li {
+    display: flex;
+    align-items: center;
+}
+
+#frases-banner p {
+    color: var(--color-fondo);
+    margin: 0;
+}
