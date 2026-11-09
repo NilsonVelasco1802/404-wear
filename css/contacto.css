@@ -1,10 +1,9 @@
-
-.inicio-contacto{
+.inicio-contacto {
     padding: var(--space-3xl) 0;
     background-color: var(--color-fondo);
 }
 
-.hablemosclaro{
+.hablemosclaro {
     font-family: var(--font-titulos);
     font-size: clamp(3rem, 6vw, 5.5rem); 
     line-height: 0.9;
@@ -13,14 +12,13 @@
     letter-spacing: -1px;
 }
 
-.descripcion1{
+.descripcion1 {
     font-family: var(--font-textos);
     font-size: var(--font-md);
     color: var(--color-gris);
     max-width: 95%; 
     line-height: 1.6;
 }
-
 
 .imagen-caja-roja {
     width: 100%; 
@@ -32,8 +30,6 @@
 
 
 
-/* seccion de contacto*/
-
 .seccion-contacto {
     background-color: var(--color-fondo);
     border-top: 1px solid var(--color-bordes);
@@ -44,7 +40,7 @@
 .texto-gris { color: var(--color-gris); }
 .texto-blanco { color: var(--color-blanco); }
 
-/* Títulos de la izquierda*/
+/* Títulos de la izquierda */
 .titulo-seccion {
     font-family: var(--font-titulos);
     font-size: clamp(2.5rem, 5vw, 4rem);
@@ -58,7 +54,7 @@
     color: var(--color-blanco);
 }
 
-/* Título del formulario*/
+/* Título del formulario */
 .titulo-formulario {
     font-family: var(--font-titulos);
     font-size: clamp(2rem, 4vw, 3rem);
@@ -67,8 +63,7 @@
     margin: 0;
 }
 
-/*botones del contacto*/
-
+/* Botones del contacto */
 .btn-brutalist {
     display: flex;
     justify-content: space-between;
@@ -91,8 +86,7 @@
     color: var(--color-rojo);
 }
 
-/* imputs del formulario*/
-
+/* Inputs del formulario */
 .input-brutalist {
     background-color: var(--color-tarjetas); 
     border: 1px solid transparent;
@@ -104,7 +98,6 @@
     transition: var(--transition-normal);
 }
 
-/* Cuando el usuario hace clic en el input */
 .input-brutalist:focus {
     background-color: var(--color-tarjetas);
     color: var(--color-blanco);
@@ -113,15 +106,13 @@
     outline: none;
 }
 
-/* Color del texto de relleno (placeholder) */
 .input-brutalist::placeholder {
     color: var(--color-gris);
     opacity: 0.7;
 }
 
-/*CHECKBOX PERSONALIZADO*/
-
-.checkbox-brutalist{
+/* Checkbox Personalizado */
+.checkbox-brutalist {
     background-color: var(--color-tarjetas);
     border: 1px solid var(--color-bordes);
     border-radius: 0;
@@ -130,17 +121,17 @@
     margin-top: 0.15rem;
 }
 
-.checkbox-brutalist:checked{
+.checkbox-brutalist:checked {
     background-color: var(--color-rojo);
     border-color: var(--color-rojo);
 }
 
-.checkbox :focus {
+.checkbox-brutalist:focus {
     box-shadow: none;
     border-color: var(--color-rojo);
 }
 
-/* el boton de enviar (Rojo)*/
+/* Botón de enviar (Rojo) */
 .btn-enviar {
     display: flex;
     justify-content: space-between;
@@ -165,7 +156,6 @@
     color: var(--color-blanco);
 }
 
-/*SECCIÓN INFORMACIÓN TIENDA*/
 
 .seccion-tienda {
     background-color: var(--color-fondo);
@@ -173,7 +163,7 @@
 }
 
 /* Enlaces Naranjas (Ubicación/Envíos) */
-.linksnaranjas{
+.linksnaranjas {
     color: var(--color-naranja);
     text-decoration: none;
     font-family: var(--font-tecnica);
@@ -186,7 +176,7 @@
     color: var(--color-blanco);
 }
 
-/*IMAGEN de los pelaos*/
+/* Imagen de la tienda */
 .imagen-tienda {
     min-height: 290px; 
 }
@@ -204,8 +194,7 @@
     text-transform: uppercase;
 }
 
-/* seccion de links de las redes*/
-
+/* Redes Sociales */
 .bg-tarjetas {
     background-color: var(--color-tarjetas);
 }
@@ -226,14 +215,16 @@
     transition: var(--transition-normal);
 }
 
-
 .enlace-links:last-child {
     border-bottom: none;
 }
 
-.enlace-links :hover{
+/* Hover en las redes (Cambia el color del nombre y del texto técnico) */
+.enlace-links:hover .nombre-red,
+.enlace-links:hover .texto-naranja {
     color: var(--color-rojo);
 }
+
 .nombre-red {
     font-family: var(--font-textos);
     font-size: var(--font-lg);
@@ -242,33 +233,6 @@
     transition: var(--transition-fast);
 }
 
-/* footer de la pagina*/
-
-.texto-gigante-footer {
-    font-family: var(--font-titulos);
-    color: var(--color-texto);
-    font-size: clamp(4rem, 15vw, 18rem); 
-    line-height: 0.8; 
-    letter-spacing: -2px;
-    white-space: nowrap; 
-    overflow: hidden; 
-}
-
-
-/*menu del footer ( es lo mismo que el del header pero con clases pq si uso el del header se bugea)*/
-
-.menu-footer li a {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-texto);
-    transition: var(--transition-normal);
-    font-family: var(--font-textos);
-}
-
-.menu-footer li a:hover {
-    color: var(--color-rojo);
-    transform: scale(1.1);
-}
 
 
 .fs-xs { font-size: var(--font-xs); }       
@@ -277,5 +241,4 @@
 .fs-xxs { font-size: 0.65rem; } 
 .ls-1 { letter-spacing: 1px; }
 .border-custom-bottom { border-bottom: 1px solid var(--color-bordes); }
-.border-custom-top { border-top: 1px solid var(--color-bordes); }
 
