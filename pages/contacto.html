@@ -12,59 +12,73 @@
     <link rel="stylesheet" href="../css/contacto.css">
 </head>
 <body>
+    header id="header">
+  
+    <div id="frases-header" class="container-fluid">
+        <ul class="d-flex justify-content-center align-items-center flex-wrap">
+            <li>
+                <p>FUERA DEL SISTEMA. DENTRO DE LA CALLE.</p>
+            </li>
+            <li>
+                <p>/</p>
+            </li>
+            <li>
+                <p>COLECCIÓN 001 YA DISPONIBLE</p>
+            </li>
+        </ul>
+    </div>
+
     
-   
-    <header id="header">
-        <div id="frases-header" class="container-fluid">
-            <ul class="d-flex justify-content-center align-items-center flex-wrap">
-                <li><p>FUERA DEL SISTEMA. DENTRO DE LA CALLE.</p></li>
-                <li><p>/</p></li>
-                <li><p>COLECCIÓN 001 YA DISPONIBLE</p></li>
-            </ul>
+
+<section id="menu-header" class="container-fluid">
+
+    <div class="row align-items-center d-flex justify-content-between w-100">
+
+ 
+        <div class="col-auto">
+            <h2>404° WEAR</h2>
         </div>
 
-        <section id="menu-header" class="container-fluid">
-            <div class="row align-items-center w-100">
-                <!-- LOGO -->
-                <div class="col-auto">
-                    <h2>404° WEAR</h2>
-                </div>
+      
+        <div id="hablemos" class="col-auto order-2 order-md-3">
+            <a href="./pages/contacto.html">
+                Hablemos
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </div>
 
-     
-                <div id="hablemos" class="col-auto ms-auto order-2 order-md-3">
-                    <a href="contacto.html">
-                        Hablemos
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
+        
+        <div class="col-auto order-3 d-md-none " id="boton-menu">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#nav-header"
+                    aria-controls="nav-header"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
 
-            
-                <div class="col-auto order-3 d-md-none" id="boton-menu">
-                    <button class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#nav-header"
-                            aria-controls="nav-header"
-                            aria-expanded="false"
-                            aria-label="Abrir menú">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 
-               
-                <nav id="nav-header" class="col-12 col-md-6 order-4 order-md-2 collapse">
-                    <ul class="d-flex justify-content-center flex-wrap">
-                        <li><a class="activado" href="../index.html">Inicio</a></li>
-                        <li><a href="catalogo.html">Catálogo</a></li>
-                        <li><a href="conocenos.html">Conócenos</a></li>
-                        <li><a href="comunidad.html">Comunidad</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-    </header>
+       
+        <nav id="nav-header"
+             class="col-12 col-md-6 order-4 order-md-2 collapse">
 
+            <ul class="d-flex justify-content-center flex-wrap">
+                <li><a class="activado" href="../index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+            </ul>
 
+        </nav>
+
+    </div>
+</section>
+</header>
+   
+   
     <section class="inicio-contacto">
         <div class="container">
             <div class="row align-items-start">
@@ -243,8 +257,8 @@
         </div>
     </section>
 
-    
-    <footer id="footer">
+
+        <footer id="footer">
         
         <div id="top-footer">
             <!-- FRASES -->
@@ -267,8 +281,10 @@
                 <div>
                     <p class="titulos-li">CONECTA</p>
                     <ul>
+                        <!-- Anclas de desplazamiento interno actualizadas -->
                         <li><a href="#seccion-tienda">La marca</a></li>
                         <li><a href="#seccion-contacto">Contacto</a></li>
+                        <li><a href="#seccion-redes">Redes</a></li>
                         <li><a href="#seccion-contacto">Preguntas frecuentes</a></li>
                     </ul>
                 </div>
@@ -300,3 +316,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
