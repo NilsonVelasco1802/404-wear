@@ -160,7 +160,7 @@
 }
 
 #articulo-titulos{
-    margin: var(--font-2xl) 0px var(--space-md);
+    margin: var(--font-2xl) 0px var(--space-xs);
 }
 
 #titulo-coleccion001 h2{
@@ -176,7 +176,7 @@
 ========================= */
 
 #coleccion {
-    padding: var(--space-md) 0;
+    padding: var(--space-lg) 0;
 }
 
 /* TARJETAS */
@@ -264,6 +264,156 @@
 
     .info-coleccion h3 {
         font-size: var(--font-md);
+    }
+
+}
+
+/* proximos esenciales*/ 
+
+#porx-esenciales{
+    padding: var(--space-md) var(--font-2xl);
+}
+
+#porx-esenciales-link a{
+    display: inline-block;
+    border: solid var(--color-bordes);
+    text-decoration: none;
+    background-color: var(--color-fondo);
+    color: var(--color-gris);
+    padding: var(--font-md);
+    transition: var(--transition-normal);
+}
+#porx-esenciales-link a:hover{
+    transform: scale(1.05);
+    color: var(--color-rojo);
+    border: solid var(--color-rojo);
+}
+
+
+
+/* =========================
+   PRODUCTOS ESENCIALES
+========================= */
+
+#prod-prox-esenciales {
+    padding: var(--space-md);
+}
+
+/* TARJETA */
+
+.producto-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* IMAGEN */
+
+.producto-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3.7;
+    object-fit: cover;
+    display: block;
+    transition: var(--transition-normal);
+}
+
+.producto-card img:hover {
+    transform: scale(1.02);
+}
+
+/* INFORMACIÓN */
+
+#info-producto{
+    background-color: var(--color-bordes);
+    padding: var(--space-md);
+}
+
+.info-producto {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: var(--space-md);
+}
+
+/* NOMBRE */
+
+.info-producto h3 {
+    font-family: var(--font-subtitulos);
+    font-size: var(--font-lg);
+    color: var(--color-texto);
+    margin: 0 0 var(--space-xs);
+}
+
+.info-producto p {
+    font-size: var(--font-sm);
+    color: var(--color-gris);
+    margin: 0;
+}
+
+/* PRECIO */
+
+.info-producto .precio {
+    font-family: var(--font-tecnica);
+    color: var(--color-texto);
+    font-size: var(--font-base);
+    white-space: nowrap;
+}
+
+/* CONSULTAR */
+
+.consulta-producto {
+    border-top: 1px solid var(--color-gris);
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.consulta-producto p:first-child {
+    color: var(--color-texto);
+}
+
+.consulta-producto p:last-child {
+    color: var(--color-naranja);
+    font-size: var(--font-xl);
+}
+
+.consulta-producto:hover p:first-child {
+    color: var(--color-naranja);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    #prod-prox-esenciales {
+        padding: var(--space-xl);
+    }
+
+    .info-producto h3 {
+        font-size: var(--font-md);
+    }
+
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 767px) {
+
+    #prod-prox-esenciales {
+        padding: var(--space-md);
+    }
+
+    .producto-card img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .info-producto h3 {
+        font-size: var(--font-lg);
     }
 
 }

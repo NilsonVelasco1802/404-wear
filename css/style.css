@@ -290,6 +290,9 @@ p {
 #hablemos:hover {
     border-color: var(--color-rojo);
     transform: scale(1.05);
+   & a{
+      color: var(--color-rojo);
+   }
 }
 
 #hablemos a {
