@@ -1,13 +1,508 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunidad</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/comunidad.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunidad</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/comunidad.css">
 </head>
 <body>
-    
+
+    <header id="header">
+    <!-- FRASES SUPERIORES -->
+    <div id="frases-header" class="container-fluid">
+        <ul class="d-flex justify-content-center align-items-center flex-wrap">
+            <li>
+                <p>FUERA DEL SISTEMA. DENTRO DE LA CALLE.</p>
+            </li>
+            <li>
+                <p>/</p>
+            </li>
+            <li>
+                <p>COLECCIÓN 001 YA DISPONIBLE</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MENU PRINCIPAL -->
+
+<section id="menu-header" class="container-fluid">
+
+    <div class="row align-items-center d-flex justify-content-between w-100">
+
+        <!-- LOGO -->
+        <div class="col-auto">
+            <h2>404° WEAR</h2>
+        </div>
+
+        <!-- HABLEMOS -->
+        <div id="hablemos" class="col-auto order-2 order-md-3">
+            <a href="./pages/contacto.html">
+                Hablemos
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <div class="col-auto order-3 d-md-none " id="boton-menu">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#nav-header"
+                    aria-controls="nav-header"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+       <!-- NAVEGACIÓN -->
+<nav id="nav-header"
+     class="col-12 col-md-6 order-4 order-md-2 collapse">
+
+    <ul class="d-flex justify-content-center flex-wrap">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./conocenos.html">Conócenos</a></li>
+        <li><a class="activado" href="./comunidad.html">Comunidad</a></li>
+    </ul>
+
+</nav>
+    </div>
+</section>
+
+
+</header> 
+
+<main>
+
+  <!--  RUTA DE NAVEGACIÓN  -->
+  <p class="migas texto-tecnico">
+    <span>Inicio</span>
+    <span>/</span>
+    <span>Comunidad</span>
+  </p>
+
+  <!--  HERO  -->
+  <section class="hero">
+
+    <div class="hero__texto">
+
+      <p class="hero__etiqueta etiqueta">Comunidad / Conectados por la calle</p>
+
+      <h1 class="hero__titulo">
+        No vas<br>
+        en solitario.
+      </h1>
+
+      <h2 class="hero__subtitulo">Distintos códigos. Un mismo punto.</h2>
+
+      <p class="hero__descripcion">
+        La ropa nos conecta. La música, el arte y el asfalto hacen el resto.
+        Descubre la red creativa y los encuentros que imaginamos para la
+        comunidad 404° WEAR.
+      </p>
+
+      <a class="hero__boton btn-primary" href="#proximos-encuentros">Explorar la agenda ↗</a>
+
+    </div>
+
+    <figure class="hero__media">
+
+      <img
+        class="hero__imagen"
+        src="../img-comunidad/diario-de-calle.jpg"
+        alt="Dos jóvenes con ropa urbana oscura conversando en una plaza de concreto"
+      >
+
+      <figcaption class="hero__pie">
+        <span>Diario de calle / Sin coordenadas</span>
+        <span>404° ↗</span>
+      </figcaption>
+
+    </figure>
+
+  </section>
+
+  <!--  FRANJA NARANJA  -->
+  <div class="franja">
+    <span>Crear</span>
+    <span>/</span>
+    <span>Compartir</span>
+    <span>/</span>
+    <span>Hacer ruido</span>
+    <span>/</span>
+    <span>404° Wear</span>
+    <span>/</span>
+    <span>Fuera de sistema</span>
+  </div>
+
+  <!--  AVISO DE CONTENIDO DE MUESTRA  -->
+  <aside class="aviso">
+    <strong class="aviso__etiqueta">Contenido de muestra</strong>
+    <p class="aviso__texto">
+      Aliados, espacios y eventos ficticios, por confirmar. Las fotografías son
+      representaciones conceptuales, no registros de encuentros reales.
+    </p>
+  </aside>
+
+  <!--  01 / RED CREATIVA (HU-21, HU-22)  -->
+  <section class="aliados" id="red-creativa" aria-labelledby="titulo-aliados">
+
+    <header class="seccion__encabezado">
+      <p class="etiqueta">01 / Red creativa</p>
+      <h2 id="titulo-aliados">El código se comparte.</h2>
+      <p>
+        Oficios distintos, una misma actitud. Así imaginamos las
+        colaboraciones que amplían el universo de 404° WEAR.
+      </p>
+    </header>
+
+    <ul class="aliados__lista">
+
+      <li class="aliado">
+        <p class="aliado__logo">margen®</p>
+        <p class="aliado__categoria etiqueta">Diseño + serigrafía</p>
+        <h3 class="aliado__nombre">Margen Estudio</h3>
+        <p class="aliado__descripcion">
+          Taller independiente de gráfica textil y pequeñas ediciones impresas.
+        </p>
+        <p class="aliado__colaboracion">
+          Con 404°: laboratorio de estampación y personalización de prendas.
+        </p>
+      </li>
+
+      <li class="aliado">
+        <p class="aliado__logo">FB / 33</p>
+        <p class="aliado__categoria etiqueta">Música + cultura</p>
+        <h3 class="aliado__nombre">Frecuencia Baja</h3>
+        <p class="aliado__descripcion">
+          Colectivo de selectores que cruza electrónica, hip-hop y sonidos de barrio.
+        </p>
+        <p class="aliado__colaboracion">
+          Con 404°: curaduría musical para sesiones y encuentros.
+        </p>
+      </li>
+
+      <li class="aliado">
+        <p class="aliado__logo">Borde //</p>
+        <p class="aliado__categoria etiqueta">Skate + movimiento</p>
+        <h3 class="aliado__nombre">Borde Skate Co.</h3>
+        <p class="aliado__descripcion">
+          Proyecto de skate que impulsa sesiones abiertas y aprendizaje compartido.
+        </p>
+        <p class="aliado__colaboracion">
+          Con 404°: jornadas de patín, estilo y cultura de calle.
+        </p>
+      </li>
+
+      <li class="aliado">
+        <p class="aliado__logo">[Plano]<br>Crudo</p>
+        <p class="aliado__categoria etiqueta">Fotografía + edición</p>
+        <h3 class="aliado__nombre">Plano Crudo</h3>
+        <p class="aliado__descripcion">
+          Estudio visual centrado en retrato urbano, autoedición y mirada colectiva.
+        </p>
+        <p class="aliado__colaboracion">
+          Con 404°: paseos fotográficos y fanzines de la comunidad.
+        </p>
+      </li>
+
+    </ul>
+
+  </section>
+
+  <!--  02 / PRÓXIMOS ENCUENTROS (HU-23, HU-24)  -->
+  <section class="proximos" id="proximos-encuentros" aria-labelledby="titulo-proximos">
+
+    <header class="seccion__encabezado">
+      <p class="etiqueta">02 / Próximos encuentros</p>
+      <h2 id="titulo-proximos">Nos vemos en la calle.</h2>
+      <p>
+        Agenda de muestra · noviembre 2026 — enero 2027. Música, talleres y
+        nuevas formas de encontrarnos fuera de la pantalla.
+      </p>
+    </header>
+
+    <!-- Evento destacado -->
+    <article class="destacado">
+
+      <figure class="destacado__media">
+        <img
+          class="destacado__imagen"
+          src="../img-comunidad/musica+streetwear.jpg"
+          alt="Grupo de jóvenes alrededor de una mesa de DJ con tocadiscos en una nave industrial"
+        >
+        <span class="destacado__badge etiqueta">Próximo / Destacado</span>
+        <figcaption class="destacado__pie etiqueta">
+          Música × Streetwear / Imagen conceptual
+        </figcaption>
+      </figure>
+
+      <div class="destacado__info">
+        <p class="destacado__fecha etiqueta">
+          <time datetime="2026-11-21">21 Nov 2026</time> / 18:00 — 22:00
+        </p>
+        <h3 class="destacado__titulo">Fuera de frecuencia.</h3>
+        <p class="destacado__lugar">Nave Umbral · Madrid</p>
+        <p class="destacado__descripcion">
+          404° WEAR × Frecuencia Baja. Una sesión de vinilos, looks libres y
+          conversación para conectar a quienes crean su propio código.
+        </p>
+        <a class="destacado__boton btn-primary" href="contacto.html">Consultar el encuentro ↗</a>
+      </div>
+
+    </article>
+
+    <!-- Lista de eventos siguientes -->
+    <div class="proximos__cabecera">
+      <h3 class="proximos__subtitulo">Lo que viene después.</h3>
+      <p class="proximos__contador etiqueta">03 encuentros / Todos en Madrid</p>
+    </div>
+
+    <ul class="proximos__lista">
+
+      <li class="evento">
+        <time class="evento__fecha" datetime="2026-11-28">
+          <span class="evento__dia">28</span>
+          <span class="evento__mes">Nov</span>
+          <span class="evento__anio">2026</span>
+        </time>
+        <div class="evento__contenido">
+          <p class="evento__tipo etiqueta">Taller / Margen Estudio</p>
+          <h4 class="evento__titulo">Reescribe tu prenda</h4>
+          <p class="evento__descripcion">
+            Trae una camiseta y experimenta con serigrafía a una tinta junto a
+            404° y Margen Estudio.
+          </p>
+        </div>
+        <div class="evento__detalles">
+          <p class="evento__lugar">Taller Margen · Madrid</p>
+          <p class="evento__hora etiqueta">16:00 — 19:00</p>
+        </div>
+        <a class="evento__enlace etiqueta" href="contacto.html"
+           aria-label="Consultar el evento Reescribe tu prenda">Consultar ↗</a>
+      </li>
+
+      <li class="evento">
+        <time class="evento__fecha" datetime="2026-12-12">
+          <span class="evento__dia">12</span>
+          <span class="evento__mes">Dic</span>
+          <span class="evento__anio">2026</span>
+        </time>
+        <div class="evento__contenido">
+          <p class="evento__tipo etiqueta">Sesión abierta / Borde Skate Co.</p>
+          <h4 class="evento__titulo">Asfalto en movimiento</h4>
+          <p class="evento__descripcion">
+            Una mañana de skate de iniciación, intercambio de trucos y
+            estilismos en movimiento con 404°.
+          </p>
+        </div>
+        <div class="evento__detalles">
+          <p class="evento__lugar">Patio Borde · Madrid</p>
+          <p class="evento__hora etiqueta">11:00 — 14:00</p>
+        </div>
+        <a class="evento__enlace etiqueta" href="contacto.html"
+           aria-label="Consultar el evento Asfalto en movimiento">Consultar ↗</a>
+      </li>
+
+      <li class="evento">
+        <time class="evento__fecha" datetime="2027-01-16">
+          <span class="evento__dia">16</span>
+          <span class="evento__mes">Ene</span>
+          <span class="evento__anio">2027</span>
+        </time>
+        <div class="evento__contenido">
+          <p class="evento__tipo etiqueta">Paseo fotográfico / Plano Crudo</p>
+          <h4 class="evento__titulo">Otra forma de mirar</h4>
+          <p class="evento__descripcion">
+            Recorrido urbano con 404° y Plano Crudo para crear un pequeño
+            fanzine colectivo. Trae cámara o móvil.
+          </p>
+        </div>
+        <div class="evento__detalles">
+          <p class="evento__lugar">Estudio Plano Crudo · Madrid</p>
+          <p class="evento__hora etiqueta">10:00 — 13:00</p>
+        </div>
+        <a class="evento__enlace etiqueta" href="contacto.html"
+           aria-label="Consultar el evento Otra forma de mirar">Consultar ↗</a>
+      </li>
+
+    </ul>
+
+  </section>
+
+  <!--  03 / RETROSPECTIVA (HU-25)  -->
+  <section class="retro" id="retrospectiva" aria-labelledby="titulo-retro">
+
+    <header class="seccion__encabezado">
+      <p class="etiqueta">03 / Retrospectiva conceptual</p>
+      <h2 id="titulo-retro">Lo que deja huella.</h2>
+      <p>
+        Encuentros anteriores de muestra. Un archivo imaginado de lo que pasa
+        cuando la comunidad toma la iniciativa.
+      </p>
+    </header>
+
+    <ul class="retro__lista">
+
+      <li class="retro__tarjeta">
+        <figure class="retro__media">
+          <img
+            class="retro__imagen"
+            src="../img-comunidad/tinta.jpg"
+            alt="Manos estampando una camiseta con serigrafía roja sobre una mesa de taller"
+          >
+          <figcaption class="retro__pie etiqueta">Archivo conceptual / 2026</figcaption>
+        </figure>
+        <p class="retro__meta etiqueta">
+          <time datetime="2026-10-24">24 Oct 2026</time> / Taller Margen · Madrid
+        </p>
+        <h3 class="retro__titulo">Tinta sobre asfalto</h3>
+        <p class="retro__resumen">
+          404° y Margen Estudio: una tarde imaginada de pruebas de tinta,
+          camisetas intervenidas y gráfica compartida.
+        </p>
+      </li>
+
+      <li class="retro__tarjeta">
+        <figure class="retro__media">
+          <img
+            class="retro__imagen"
+            src="../img-comunidad/rodar-sin-guion.jpg"
+            alt="Joven patinador saltando sobre un banco de concreto en un patio urbano"
+          >
+          <figcaption class="retro__pie etiqueta">Archivo conceptual / 2026</figcaption>
+        </figure>
+        <p class="retro__meta etiqueta">
+          <time datetime="2026-10-03">03 Oct 2026</time> / Patio Borde · Madrid
+        </p>
+        <h3 class="retro__titulo">Rodar sin guion</h3>
+        <p class="retro__resumen">
+          Una sesión conceptual de 404° con Borde Skate Co.: primeras tablas,
+          trucos y nuevas maneras de ocupar el patio.
+        </p>
+      </li>
+
+      <li class="retro__tarjeta">
+        <figure class="retro__media">
+          <img
+            class="retro__imagen"
+            src="../img-comunidad/miradas-fuera-de-plano.jpg"
+            alt="Cuatro jóvenes alrededor de una mesa llena de fotografías impresas"
+          >
+          <figcaption class="retro__pie etiqueta">Archivo conceptual / 2026</figcaption>
+        </figure>
+        <p class="retro__meta etiqueta">
+          <time datetime="2026-09-12">12 Sep 2026</time> / Estudio Plano Crudo · Madrid
+        </p>
+        <h3 class="retro__titulo">Miradas fuera de plano</h3>
+        <p class="retro__resumen">
+          Un paseo fotográfico imaginado con 404° y Plano Crudo que termina en
+          una mesa de contactos y pequeños fanzines.
+        </p>
+      </li>
+
+    </ul>
+
+    <p class="retro__nota etiqueta">
+      Fotografías conceptuales, no documentan eventos reales.
+    </p>
+
+  </section>
+
+  <!--  04 / BANNER DE COLABORACIÓN  -->
+  <section class="colaboracion" id="colaboracion" aria-labelledby="titulo-colaboracion">
+
+    <div class="colaboracion__texto">
+      <p class="etiqueta">04 / La próxima conexión empieza contigo</p>
+      <h2 id="titulo-colaboracion">
+        Tu idea también<br>
+        tiene sitio aquí.
+      </h2>
+    </div>
+
+    <div class="colaboracion__accion">
+      <p>
+        ¿Creas, patinas, pinchas o tienes algo que proponer? Cuéntanos cómo te
+        gustaría formar parte del universo 404°.
+      </p>
+      <a class="colaboracion__boton" href="contacto.html">Proponer una colaboración ↗</a>
+    </div>
+
+  </section>
+
+  <footer id="footer" class="container-fluid">
+
+    <!-- FOOTER TOP -->
+    <section id="top-footer" class="row">
+
+        <div id="frases-footer" class="col-12 col-md-5">
+            <p>404° WEAR / UNIFORME PARA SER TÚ.</p>
+            <p>Ropa de calle. Actitud propia. Sin pedir permiso.</p>
+        </div>
+
+        <div id="menu-footer" class="col-12 col-md-7 ">
+
+            <div class="row">
+
+                <div class="col-6 col-md-6">
+                    <ul>
+                        <li class="titulos-li">EXPLORA</li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Colección 001</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6">
+                    <ul>
+                        <li class="titulos-li">CONECTA</li>
+                        <li><a href="#">La marca</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Redes</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- LOGO -->
+    <section id="logo-footer">
+        <h2>404° WEAR</h2>
+    </section>
+
+    <!-- COPYRIGHT -->
+    <section id="copyright-footer" class=" d-flex justify-content-between">
+
+        <div class="">
+            <p>© 2026 404° WEAR. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="">
+            <p>PRIVACIDAD / CONDICIONES</p>
+        </div>
+
+        <div class="">
+            <p id="p-color-narnja">
+                HECHO POR LA CALLE
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+        </div>
+
+    </section>
+
+</footer>
+
+</main>
+
 </body>
 </html>
