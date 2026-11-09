@@ -152,3 +152,118 @@
     color: var(--color-fondo);
     margin: 0;
 }
+
+/* coleccion001 */ 
+
+#coleccion001{
+    padding:  var(--space-2xl);
+}
+
+#articulo-titulos{
+    margin: var(--font-2xl) 0px var(--space-md);
+}
+
+#titulo-coleccion001 h2{
+    font-size: var(--font-3xl);
+}
+#p-colorrojo{
+    color: var(--color-rojo);
+}
+
+
+/* =========================
+   COLECCIÓN
+========================= */
+
+#coleccion {
+    padding: var(--space-md) 0;
+}
+
+/* TARJETAS */
+
+.tarjeta-coleccion {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* IMÁGENES */
+
+.tarjeta-coleccion img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: var(--transition-normal);
+}
+
+.tarjeta-coleccion:hover img {
+    transform: scale(1.03);
+}
+
+/* INFORMACIÓN */
+
+.info-coleccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: var(--space-md);
+    gap: var(--space-sm);
+}
+
+.info-coleccion h3 {
+    font-family: var(--font-subtitulos);
+    font-size: var(--font-lg);
+    margin: 0;
+    color: var(--color-texto);
+}
+
+.info-coleccion p {
+    font-size: var(--font-sm);
+    margin: var(--space-xs) 0 0;
+    color: var(--color-gris);
+}
+
+/* FLECHA */
+
+.info-coleccion .flecha {
+    color: var(--color-naranja);
+    font-size: var(--font-xl);
+    margin: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    #coleccion {
+        padding: var(--space-lg);
+    }
+
+    .info-coleccion h3 {
+        font-size: var(--font-md);
+    }
+
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 767px) {
+
+    #coleccion {
+        padding: var(--space-md);
+    }
+
+    .tarjeta-coleccion img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .info-coleccion h3 {
+        font-size: var(--font-md);
+    }
+
+}
