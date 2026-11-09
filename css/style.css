@@ -217,7 +217,7 @@ p {
 #frases-header ul {
     gap: var(--space-sm);
     padding: 0;
-    margin: var(--space-xs);
+    margin: 0 var(--space-xs);
     list-style: none;
 }
 
