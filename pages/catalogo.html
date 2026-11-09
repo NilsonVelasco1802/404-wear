@@ -4,22 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/catalogo.css">
 </head>
 <body>
+
+<header id="header">
+    <!-- FRASES SUPERIORES -->
+    <div id="frases-header" class="container-fluid">
+        <ul class="d-flex justify-content-center align-items-center flex-wrap">
+            <li>
+                <p>FUERA DEL SISTEMA. DENTRO DE LA CALLE.</p>
+            </li>
+            <li>
+                <p>/</p>
+            </li>
+            <li>
+                <p>COLECCIÓN 001 YA DISPONIBLE</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MENU PRINCIPAL -->
+
+<section id="menu-header" class="container-fluid">
+
+    <div class="row align-items-center d-flex justify-content-between w-100">
+
+        <!-- LOGO -->
+        <div class="col-auto">
+            <h2>404° WEAR</h2>
+        </div>
+
+        <!-- HABLEMOS -->
+        <div id="hablemos" class="col-auto order-2 order-md-3">
+            <a href="./contacto.html">
+                Hablemos
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <div class="col-auto order-3 d-md-none " id="boton-menu">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#nav-header"
+                    aria-controls="nav-header"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- NAVEGACIÓN -->
+        <nav id="nav-header"
+             class="col-12 col-md-6 order-4 order-md-2 collapse">
+
+            <ul class="d-flex justify-content-center flex-wrap">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a class="activado" href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./conocenos.html">Conócenos</a></li>
+                <li><a href="./comunidad.html">Comunidad</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+</section>
+
+
+</header>
     <!--header-->
 
     <div class="grid-container">
 
 
-        <div>
+        <div class="container-titulo">
 
             <h1>ELIGE TU CÓDIGO.</h1>
             <P>Prendas que hablan por ti. Explora</P>
         </div>
 
-        <div>
+        <div class="naranjado">
             <h1>001</h1>
         </div>
 
@@ -44,50 +113,69 @@
         <section class="catalogo">
 
             <article class="prendas">
-                <img src="../img-catalogo/img-catalog01.jpeg" alt="">
-                <h3>Sudadera Ruido 79$</h3>
+                <img src="../img-catalogo/catalogo00.jpeg" alt="">
+            <div class="caja_prcio">  <h3>Sudadera Ruido 79$</h3>
                 <p>Negro lavado S - XL</p>
                 <button>comprar esta prenda</button>
+            </div>
+              
             </article>
 
             <article class="prendas">
-                <img src="../img-catalogo/img-catalog01.jpeg" alt="">
-                <h3>Camiseta Error 35$</h3>
+                <img src="../img-catalogo/catalogo01.png" alt="">
+    <div class="caja_prcio">
+                    <h3>Camiseta Error 35$</h3>
                 <p>Blanco Roto S - XL</p>
                 <button>comprar esta prenda</button>
+    </div>
             </article>
 
             <article class="prendas">
-                <img src="../img-catalogo/img-catalog01.jpeg" alt="">
-                <h3>Cargo Asfalto 89$</h3>
-                <p>Gris Carbon 36- 44</p>
+                <img src="../img-catalogo/catalogo02.png" alt="">
+            <div class="caja_prcio"> 
+                 <h3>Sudadera Ruido 79$</h3>
+                <p>Negro lavado S - XL</p>
                 <button>comprar esta prenda</button>
+            </div>
+
             </article>
 
             <article class="prendas">
-                <img src="../img-catalogo/img-catalog01.jpeg" alt="">
+                <img src="../img-catalogo/catalogo04.png" alt="">
+            <div class="caja_prcio">
+                                <h3>Chaqueta Bloque 119$</h3>
+                <p>Negro S - XL</p>
+                <button>comprar esta prenda</button>
+            </div>
+
+            </article>
+
+            <article class="prendas">
+                <img src="../img-catalogo/catalogo05.png" alt="">
+            <div class="caja_prcio">
                 <h3>Chaqueta Bloque 119$</h3>
                 <p>Negro S - XL</p>
                 <button>comprar esta prenda</button>
+            </div>
             </article>
 
-            <article class="prendas">
-                <img src="../img-catalogo/img-catalog01.jpeg" alt="">
-                <h3>Bermuda Sector 59$</h3>
-                <p>Piedra S - XL</p>
-                <button>comprar esta prenda</button>
-            </article>
 
             <article class="prendas">
-                <img src="../img-catalogo/img-catalog01.jpeg" alt="">
+                <img src="../img-catalogo/catalogo06.png" alt="">
+            <div class="caja_prcio">
                 <h3>Gorra Sin Señal 29$</h3>
                 <p>Negro Ajustable</p>
                 <button>comprar esta prenda</button>
+            </div>
+
             </article>
 
         </section>
 
-        <p>HAS VISTO TODA LA COLECCION. Y SABES QUE LO TUYO ESTA AQUI</p>
+        <div class="end">
+        <p >HAS VISTO TODA LA COLECCION. Y SABES QUE LO TUYO ESTA AQUI</p>
+        </div>
+
 
 
     </div>
@@ -95,5 +183,71 @@
 
 
     <!--footer-->
+    <footer id="footer" class="container-fluid">
+
+    <!-- FOOTER TOP -->
+    <section id="top-footer" class="row">
+
+        <div id="frases-footer" class="col-12 col-md-5">
+            <p>404° WEAR / UNIFORME PARA SER TÚ.</p>
+            <p>Ropa de calle. Actitud propia. Sin pedir permiso.</p>
+        </div>
+
+        <div id="menu-footer" class="col-12 col-md-7 ">
+
+            <div class="row">
+
+                <div class="col-6 col-md-6">
+                    <ul>
+                        <li class="titulos-li">EXPLORA</li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Colección 001</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6">
+                    <ul>
+                        <li class="titulos-li">CONECTA</li>
+                        <li><a href="#">La marca</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Redes</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- LOGO -->
+    <section id="logo-footer">
+        <h2>404° WEAR</h2>
+    </section>
+
+    <!-- COPYRIGHT -->
+    <section id="copyright-footer" class=" d-flex justify-content-between">
+
+        <div class="">
+            <p>© 2026 404° WEAR. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="">
+            <p>PRIVACIDAD / CONDICIONES</p>
+        </div>
+
+        <div class="">
+            <p id="p-color-narnja">
+                HECHO POR LA CALLE
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+        </div>
+
+    </section>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -6,6 +6,9 @@
     @media(width < 720px) {
         grid-template-columns: repeat(2, 1fr);
     }
+    @media(width < 600px){
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .prendas {
@@ -25,6 +28,14 @@
     justify-content: start;
     gap: var(--space-md);
     list-style: none;
+        @media(width < 720px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(width < 600px){
+            display: grid ;
+            grid-template-columns: repeat(2, 1fr);
+     }
+
 }
 
 .categorias li {
@@ -42,9 +53,56 @@
 .grid-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: var( --space-xl);
 }
 
 .grid-catalogo {
     padding: var( --space-xl);
+}
+
+
+.container-titulo {
+    padding: var(--space-xl);
+    & h1{   
+        
+    font-family: var(--font-titulos);
+}
+    
+}
+
+.naranjado {
+    background-color: var(--color-rojo);
+    color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 50px 120px;
+    display: flex;
+    align-items: flex-end;
+    font-family: var(--font-subtitulos);
+}
+
+.catalogo button{
+    background-color: var(--color-rojo);
+    border: none;
+    color: var(--color-texto);
+    padding: var(--space-sm);
+}
+
+.catalogo button:hover {
+        background-color: var(--color-naranja);
+    color: var(--color-texto);
+    transition: var(--transition-normal);
+
+}
+
+.end {
+    font-family: var(-font-subtitulos);
+    display: flex;
+    justify-content: center;
+    padding: var(--space-2xl);
+}
+
+.caja_prcio{
+    padding: var(--space-md);
+
 }
